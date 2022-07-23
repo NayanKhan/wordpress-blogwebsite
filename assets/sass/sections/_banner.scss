@@ -1,0 +1,82 @@
+/*----------------------------------------------
+    ## Banner
+----------------------------------------------*/
+.banner-inner {
+	position: relative;
+	z-index: 2;
+	.banner-btn {
+		height: 35px;
+		background: rgba(255,255,255,0.2);
+		display: inline-block;
+		border-radius: 35px;
+		line-height: 35px;
+		padding: 0 30px;
+		font-size: 14px;
+		font-weight: 400;
+		color: #fff;
+		margin-bottom: 20px;
+	}
+	.sub-title {
+		position: relative;
+		display: inline-block;
+		margin-bottom: 20px;
+		&:after {
+			position: absolute;
+			content: '';
+		    right: -60px;
+			top: 9px;
+			background: var(--heading-color);
+			height: 1px;
+			width: 30px;
+		}
+	}
+	.title {
+		margin-bottom: 32px;
+	}
+	&.style-white {
+		.sub-title {
+			color: #fff;
+			&:after {
+				background: #fff;
+			}
+		}
+		.title {
+			color: #fff;
+		}
+	}
+	.b-animate-1 {
+    	animation: 1.5s 0.2s fadeInLeft both;
+	}
+	.b-animate-2 {
+		animation: 1.5s 0.4s fadeInLeft both;
+	}
+	.b-animate-3 {
+		animation: 1.5s 0.6s fadeInLeft both;
+	}
+}
+.b-animate-thumb {
+	animation: 1.5s 0.4s fadeInRight both;
+}
+
+.banner-area {
+	position: relative;
+}
+.banner-area-1 {
+	padding: 205px 0;
+}
+.banner-area-2 {
+	background-size: cover !important;
+	padding: 270px 0 200px;
+	&:after {
+	    content: "";
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    height: 100%;
+	    width: 100%;
+	    background: rgba(0, 33, 71, 0.9);
+	}
+}
+.banner-area-3 {
+	padding: 270px 0 200px;
+}

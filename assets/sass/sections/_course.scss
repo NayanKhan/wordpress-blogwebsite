@@ -1,0 +1,240 @@
+/*----------------------------------------------
+    ## Course section style
+----------------------------------------------*/
+.edmt-nav-tab {
+	margin-bottom: 42px;
+    ul {
+    	text-align: center;
+    	border: 0;
+    	display: inline-block;
+	    li {
+	    	display: inline-block;
+	    	a {
+	    		border: 0 !important;
+	    		color: var(--heading-color);
+	    		font-size: 15px;
+	    		font-weight: 500;
+	    		height: 38px;
+	    		line-height: 38px;
+	    		border-radius: 40px !important;
+	    		padding: 0 25px !important;
+	    		&.active {
+	    			background-color: var(--main-color) !important;
+	    			color: var(--heading-color) !important;
+	    		}
+	    	}
+	    	&:last-child {
+	    		margin-right: 0;
+	    	}
+	    }
+    }
+}
+
+.single-course-inner {
+	border-radius: 7px;
+	border: 1px solid #F1F1F1;
+	margin-bottom: 30px;
+	position: relative;
+	transition: 0.4s;
+	.thumb {
+		position: relative;
+		overflow: hidden;
+		border-radius: 7px 7px 0 0;
+		img {
+			transform: scale(1);
+		    transition: 0.9s;
+		}
+	}
+	.details {
+		.details-inner {
+			padding: 20px 20px 16px;
+			h6 {
+				font-weight: 500;
+			}
+		}
+		.emt-user {
+			margin-bottom: 13px;
+			.u-thumb {
+				height: 30px;
+				width: 30px;
+				border-radius: 50%;
+				background: rgba(253, 200, 0, 0.2);
+				display: inline-block;
+				margin-right: 7px;
+			    box-shadow: 0px 1px 10px #c1bfbf;
+				img {
+					border-radius: 50%;
+				}
+			}
+			span {
+				font-size: 14px;
+				color: var(--heading-color);
+				font-weight: 500;
+			}
+		}
+	}
+	.emt-course-meta {
+		border-top: 1px solid #F1F1F1;
+		padding: 14px 20px;
+		font-weight: 500;
+		.rating {
+			color: var(--main-color);
+			span {
+				font-size: 15px;
+				color: rgba(13, 16, 52, 0.5);
+			}
+		}
+		.price {
+			color: rgba(13, 16, 52, 0.5);
+			span {
+				color: var(--heading-color);
+			}
+		}
+	}
+	&.style-bottom-thumb {
+		.thumb {
+			margin: 0 15px 15px;
+			border-radius: 7px;
+			img {
+				transform: scale(1.05);
+			}
+		}
+		.details {
+			.details-inner {
+				padding: 15px;
+				h6 {
+					font-weight: 400;
+					margin-bottom: 0;
+				}
+			}
+		}
+		.emt-course-meta {
+			padding: 15px;
+			.price  {
+				height: 30px;
+				line-height: 31px;
+				font-size: 13px;
+				font-weight: 500;
+				padding: 0 15px;
+				border-radius: 30px;
+				background: var(--main-color);
+				display: inline-block;
+				color: #fff;
+			}
+		}
+	}
+	&.style-two {
+		margin-top: 45px;
+		.emt-thumb-icon {
+			height: 90px;
+			width: 90px;
+			line-height: 90px;
+			text-align: center;
+			border-radius: 5px;
+			background: var(--main-color);
+			position: absolute;
+		    left: 20px;
+			top: -45px;
+			z-index: 2;
+		}
+		.details {
+			h6 {
+				font-size: 20px;
+				margin-bottom: 0;
+			}
+		}
+		&:hover {
+			background: var(--heading-color);
+			.details {
+				h6 {
+					color: #fff;
+				}
+				.arrow-right {
+					img {
+						filter: invert(100);
+					}
+				}
+			}
+		}
+	}
+	&:hover {
+		box-shadow: $box-shadow;
+		.thumb {
+			img {
+				transform: scale(1.1);
+			}
+		}
+	}
+}
+
+
+/********** counter-area-inner ***********/
+.counter-area-inner {
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center 50px;
+}
+
+/********** course-details-nav-tab ***********/
+.course-course-detaila-inner {
+	.emt-user {
+		margin-bottom: 13px;
+		.u-thumb {
+			height: 30px;
+			width: 30px;
+			border-radius: 50%;
+			background: rgba(253, 200, 0, 0.2);
+			display: inline-block;
+			margin-right: 7px;
+		    box-shadow: 0px 1px 10px #c1bfbf;
+			img {
+				border-radius: 50%;
+			}
+		}
+		span {
+			font-size: 14px;
+			color: var(--heading-color);
+			font-weight: 500;
+		}
+	}
+	.title {
+		margin-bottom: 20px;
+	}
+	.thumb {
+		margin-bottom: 30px;
+		img {
+			border-radius: 7px;
+		}
+	}
+}
+.course-details-nav-tab {
+	background: transparent;
+	margin-bottom: 44px;
+	border: 1px solid #CBD6E2;
+	ul {
+		margin: 0;
+		padding: 0;
+		border: 0 !important;
+		li {
+		    margin-bottom: 0 !important;
+		    width: 25%;
+			a {
+				border: 0 !important;
+				border-right: 1px solid #CBD6E2 !important;
+			    padding: 10px 16px;
+				font-size: 16px;
+				font-weight: 600;
+				border-radius: 0 !important;
+				color: var(--heading-color) !important;
+				&.active {
+					background: var(--main-color) !important;
+				}
+			}
+			&:last-child {
+				a {
+					border-right: 0 !important;
+				}
+			}
+		}
+	}
+}

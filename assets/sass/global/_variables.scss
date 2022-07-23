@@ -1,0 +1,21 @@
+
+//== Template Main Color
+$color-white : #fff;
+
+//== social media colors
+$facebook: #3b5999;
+$twitter: #55acee;
+$instagram: #e4405f;
+$youtube: #cd201f;
+$pinterest: #bd081c;
+
+/*-----------------
+    # Typography
+-----------------*/
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500,600,700i&display=swap");
+
+//  transition
+$transition: all .3s ease-in;
+$transition-long: all .5s ease-in;
+$box-shadow: 0px 0px 30px rgba(0,0,0,0.07);
+$box-shadow2: 0px 8px 15px rgba(0, 0, 0, 0.08);
