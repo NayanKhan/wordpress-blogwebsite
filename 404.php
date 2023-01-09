@@ -6,7 +6,7 @@
 		  <div class="container">
 			  <div class="breadcrumb-inner">
 				  <div class="section-title mb-0 text-center">
-					  	<h1 class="page-title">404 Error - Page Not Found</h1>
+					  	<h1 class="page-title">404 Error - Page Not Found!</h1>
 					  	<h4 class="error-title">Oops! Looks Like Something was Wrong.</h4>
 						<div class="search-form">
 							<?php get_search_form()?>
